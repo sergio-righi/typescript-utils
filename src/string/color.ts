@@ -1,10 +1,10 @@
 /**
  * It converts an Hex color to a RGB color
  * @param {string} value - Hex color with or without `#`
- * @return {object} { r: number, g: number, b: number } or null if does not match
+ * @return {object?} { r: number, g: number, b: number } or undefined if does not match
  */
 
-const toRGB = (value: string): { r: number, g: number, b: number } => {
+const toRGB = (value: string): { r: number, g: number, b: number } | undefined => {
   const match = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(value);
   return match
     ? {
@@ -12,7 +12,7 @@ const toRGB = (value: string): { r: number, g: number, b: number } => {
       g: parseInt(match[2], 16),
       b: parseInt(match[3], 16),
     }
-    : null;
+    : undefined;
 };
 
 /**

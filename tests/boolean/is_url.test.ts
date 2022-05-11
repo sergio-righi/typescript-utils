@@ -1,11 +1,11 @@
 import { isURL } from "../../src/boolean/is_url";
 
 describe("> boolean > is url", () => {
-  test("missing params", () => {
-    // expect(isURL()).toEqual(false);
-    expect(isURL(undefined)).toEqual(false);
-    expect(isURL(null)).toEqual(false);
-  });
+  // test("missing params", () => {
+  //   expect(isURL()).toEqual(false);
+  //   expect(isURL(undefined)).toEqual(false);
+  //   expect(isURL(null)).toEqual(false);
+  // });
 
   // test("invalid input", () => {
   //   expect(isURL([])).toEqual(false);

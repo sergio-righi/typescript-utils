@@ -4,8 +4,8 @@
  * @returns {Date} date
  */
 
-const toDateTime = (value: string): Date => {
-  if (!!value) return null;
+const toDateTime = (value: string): Date | undefined => {
+  if (!!value) return undefined;
   let day: number;
   let month: number;
   let hour: number = 0;

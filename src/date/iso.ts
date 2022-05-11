@@ -17,6 +17,6 @@ const fromISO = (value: string): Date => {
  * @returns {string} ISO date
  */
 
-const toISO = (value: Date): string => !value ? null : value.toISOString();
+const toISO = (value: Date): string => value ? value.toISOString() : "";
 
 export { fromISO, toISO };

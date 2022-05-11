@@ -23,7 +23,7 @@ const find = (element: HTMLElement, selector: string, all: boolean = false): any
  * @returns {Element} if finds an element which matches the selector, otherwise returns null
  */
 
-const closest = (element: HTMLElement, selector: string): Element => {
+const closest = (element: HTMLElement, selector: string): HTMLElement | undefined => {
   return matches(
     element,
     selector,
@@ -38,7 +38,7 @@ const closest = (element: HTMLElement, selector: string): Element => {
  * @returns {Element} if finds an element which matches the selector, otherwise returns null
  */
 
-const forward = (element: HTMLElement, selector: string): Element => {
+const forward = (element: HTMLElement, selector: string): HTMLElement | undefined => {
   return matches(element, selector, (elm: HTMLElement) => elm.nextElementSibling);
 };
 
@@ -49,7 +49,7 @@ const forward = (element: HTMLElement, selector: string): Element => {
  * @returns {Element} if finds an element which matches the selector, otherwise returns null
  */
 
-const backward = (element: HTMLElement, selector: string): HTMLElement => {
+const backward = (element: HTMLElement, selector: string): HTMLElement | undefined => {
   return matches(element, selector, (elm: HTMLElement) => elm.previousElementSibling);
 };
 
@@ -60,8 +60,8 @@ const backward = (element: HTMLElement, selector: string): HTMLElement => {
  * @returns {Element} if finds an element which matches the selector, otherwise returns null
  */
 
-const matches = (element: HTMLElement, selector: string, walk?: Function): HTMLElement => {
-  if (!element) return null;
+const matches = (element: HTMLElement, selector: string, walk?: Function): HTMLElement | undefined => {
+  if (!element) return element;
   else {
     if (element.matches(selector)) return element;
     else if (element !== document.body && walk) {

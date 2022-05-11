@@ -1,11 +1,11 @@
 import { hasValue } from "../../src/boolean/has_value";
 
 describe("> boolean > has value", () => {
-  test("missing params", () => {
-    // expect(hasValue()).toEqual(false);
-    expect(hasValue(undefined)).toEqual(false);
-    expect(hasValue(null)).toEqual(false);
-  });
+  // test("missing params", () => {
+  //   expect(hasValue()).toEqual(false);
+  //   expect(hasValue(undefined)).toEqual(false);
+  //   expect(hasValue(null)).toEqual(false);
+  // });
 
   // test("invalid input", () => {
   //   expect(hasValue([])).toEqual(false);

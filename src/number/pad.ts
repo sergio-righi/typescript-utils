@@ -9,7 +9,7 @@ const pad = (value: number | any, size: number = 2): string => {
   return !isNaN(Number.parseFloat(value))
     ? "0".repeat(Math.max(0, size - Math.abs(value).toString().length)) +
     Math.abs(value)
-    : null;
+    : "";
 };
 
 export { pad };

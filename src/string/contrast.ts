@@ -11,7 +11,7 @@ import { toRGB } from "./color";
 const getContrast = (value: string, light: string = "#fff", dark: string = "#000"): string => {
   const rgb = toRGB(value);
   return !rgb
-    ? null
+    ? ""
     : 0.2126 * rgb.r + 0.7152 * rgb.g + 0.0722 * rgb.b < 140
       ? light
       : dark;

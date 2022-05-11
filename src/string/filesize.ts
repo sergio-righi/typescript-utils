@@ -6,7 +6,7 @@
  */
 
 const filesize = (value: number, base: number = 1024): string => {
-  if (value === undefined || typeof value !== "number") return null;
+  if (value === undefined || typeof value !== "number") return "";
 
   value = value / base;
   if (value > base) {

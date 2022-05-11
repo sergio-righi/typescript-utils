@@ -8,8 +8,9 @@
   "license": "MIT",
   "private": false,
   "main": "src/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest --no-cache"
   },
   "keywords": [

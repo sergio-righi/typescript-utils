@@ -1,11 +1,11 @@
 import { isJSON } from "../../src/boolean/is_json";
 
 describe("> boolean > is json", () => {
-  test("missing params", () => {
-    // expect(isJSON()).toEqual(false);
-    expect(isJSON(undefined)).toEqual(false);
-    expect(isJSON(null)).toEqual(false);
-  });
+  // test("missing params", () => {
+  //   expect(isJSON()).toEqual(false);
+  //   expect(isJSON(undefined)).toEqual(false);
+  //   expect(isJSON(null)).toEqual(false);
+  // });
 
   // test("invalid input", () => {
   //   expect(isJSON(0)).toEqual(false);

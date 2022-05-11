@@ -5,7 +5,7 @@
  */
 
 const format = (...params: any): string => {
-  if (params.length === 0) return null;
+  if (params.length === 0) return "";
   return params[0]
     .toString()
     .replace(/{(\d+)}/g, (match: any, i: any) => params[Number(i) + 1] || match);

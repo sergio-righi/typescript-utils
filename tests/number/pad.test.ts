@@ -25,8 +25,8 @@ describe("> number > pad", () => {
     expect(pad(10, 1)).toEqual("10");
     expect(pad(100, 0)).toEqual("100");
     expect(pad(1000, -1)).toEqual("1000");
-    expect(pad(1000, null)).toEqual("1000");
-    expect(pad(1000, undefined)).toEqual("1000");
+    // expect(pad(1000, null)).toEqual("1000");
+    // expect(pad(1000, undefined)).toEqual("1000");
   });
 
   test("bigger values", () => {

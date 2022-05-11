@@ -6,7 +6,7 @@
 
 const insertBefore = (element: HTMLElement, node: HTMLElement) => {
   if (element && node) {
-    element.parentNode.insertBefore(node, element);
+    element.parentNode?.insertBefore(node, element);
   }
 };
 
@@ -18,7 +18,7 @@ const insertBefore = (element: HTMLElement, node: HTMLElement) => {
 
 const insertAfter = (element: HTMLElement, node: HTMLElement) => {
   if (element && node) {
-    element.parentNode.insertBefore(node, element.nextSibling);
+    element.parentNode?.insertBefore(node, element.nextSibling);
   }
 };
 

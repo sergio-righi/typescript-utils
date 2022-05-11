@@ -5,7 +5,7 @@
  */
 
 const indexOf = (element: HTMLElement): number => {
-  return element
+  return element && element.parentElement
     ? Array.from(element.parentElement.children).indexOf(element)
     : -1;
 };

@@ -10,7 +10,7 @@ import { minmax } from "./minmax";
 
 const between = (value: number | any, min: number, max: number): number => {
   value = Number.parseFloat(value);
-  if (isNaN(value)) return null;
+  if (isNaN(value)) return value;
   else {
     [min, max] = minmax(min, max);
     return value < min ? min : value > max ? max : value;
