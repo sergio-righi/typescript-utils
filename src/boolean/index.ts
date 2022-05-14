@@ -12,4 +12,5 @@ export { isObject } from "./is_object";
 export { isRegex } from "./is_regex";
 export { isString } from "./is_string";
 export { isURL } from "./is_url";
+export { isVideo } from "./is_video";
 export { inRange } from "./in_range";
