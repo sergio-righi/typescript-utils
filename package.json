@@ -1,6 +1,6 @@
 {
   "name": "grater-utils-ts",
-  "version": "0.0.4-alpha",
+  "version": "0.0.5-alpha",
   "author": "Sérgio Righi",
   "email": "sergiohrighi@gmail.com",
   "description": "A set of Typescript utils",
