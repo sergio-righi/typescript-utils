@@ -1,7 +1,7 @@
 import { pad } from "../../src/number/pad";
 
 describe("> number > pad", () => {
-  const defaultOutput: any = null;
+  const defaultOutput: any = "";
 
   test("missing params", () => {
     // expect(pad()).toEqual(defaultOutput);
