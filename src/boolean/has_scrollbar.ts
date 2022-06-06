@@ -6,8 +6,8 @@
 
 const hasScrollbar = (element: Element): boolean => {
   if (!element) return false;
-  const overflowY = window.getComputedStyle(element)["overflow-y"];
-  const overflowX = window.getComputedStyle(element)["overflow-x"];
+  const overflowY = window.getComputedStyle(element, null)[<any>"overflow-y"];
+  const overflowX = window.getComputedStyle(element, null)[<any>"overflow-x"];
   return (
     ((overflowY === "scroll" || overflowY === "auto") &&
       element.scrollHeight > element.clientHeight) ||
